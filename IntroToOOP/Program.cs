@@ -10,29 +10,43 @@ namespace IntroToOOP
     {
         static void Main(string[] args)
         {
-            Cat firstCat = new Cat();
-            firstCat.Name = "Mr. Fuzzy";
+            //Cat firstCat = new Cat();
+            //firstCat.Name = "Mr. Fuzzy";
 
-            Cat secondCat = new Cat("Midnight", 14, "black");
-            secondCat.Name = "Joe";
+            //Cat secondCat = new Cat("Midnight", 14, "black");
+            //secondCat.Name = "Joe";
 
-            Console.WriteLine(firstCat.Name);
-            Console.WriteLine(secondCat.Name);
+            //Console.WriteLine(firstCat.Name);
+            //Console.WriteLine(secondCat.Name);
 
-            firstCat.HairLength = "nice and short";
-            secondCat.HairLength = "too long";
+            //firstCat.HairLength = "nice and short";
+            //secondCat.HairLength = "too long";
 
-            Console.WriteLine(firstCat.Hairball());
-            Console.WriteLine(secondCat.Hairball());
+            //Console.WriteLine(firstCat.Hairball());
+            //Console.WriteLine(secondCat.Hairball());
 
-            firstCat.Eat();
-            //secondCat.Meow();
+            //firstCat.Eat();
+            ////secondCat.Meow();
 
-            Dog dog1 = new Dog("long", 18, "fast", 52.2);
+            //Dog dog1 = new Dog("long", 18, "fast", 52.2);
 
-            dog1.Run();
-            Superhero sp1 = new Superhero(67, "X-Men", "Yellow and Blue", "Wolverine");
-            sp1.SuperName();
+            //dog1.Run();
+            Superhero sp1 = new Superhero(600,"Blue and White", "Vageta",false);
+            sp1.SuperInfo();
+            Console.WriteLine( sp1.SuperName ); 
+            sp1.Cape();
+            
+            Console.WriteLine("");
+
+            Superhero sp2 = new Superhero(1000, "Orange", " ", false);
+            sp2.SuperName = "Goku";
+            sp2.SuperInfo();
+            Console.WriteLine("");
+            sp2.RedBull();
+            sp1.Attacked();
+
+
+
 
         }   
     }
